@@ -7,13 +7,13 @@ describe('User Controller', () => {
     it('should register a new user', async () => {
       const req = {
         body: {
-          firstName: 'John',
-          lastName: 'Doe',
-          email: 'john.doe@example.com',
+          firstName: 'Vic',
+          lastName: 'Rek',
+          email: 'vic.rec@example.com',
           password: 'password123',
           picturePath: 'path/to/picture',
           friends: [],
-          location: 'New York',
+          location: 'Mykolaiv, Ukraine',
           occupation: 'Developer'
         }
       };
@@ -40,7 +40,7 @@ describe('User Controller', () => {
       expect(res.json).toHaveBeenCalledWith({
         _id: 'mockUserId',
         ...req.body,
-        password: mockHashedPassword // Expecting hashed password to be returned
+        password: mockHashedPassword 
       });
     });
   });
