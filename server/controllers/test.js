@@ -1,4 +1,4 @@
-import { register, login, getAllUsers, getUserById } from './yourControllerFile.js';
+import { register, login, getAllUsers, getUserById } from './auth.js';
 import User from '../models/User.js';
 import bcrypt from 'bcrypt';
 
